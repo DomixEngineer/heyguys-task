@@ -1,8 +1,12 @@
+@import './fonts.scss';
+@import './colors/colors';
+@import './utils.scss';
 @import './navbar/navbar';
 @import './footer/footer';
 @import './accordions/accordions';
 @import './contact/contact';
 @import './first_section/first_section';
+@import './iframe_video/_iframe_video';
 @import './team/team';
 @import './teasers/teasers';
 @import './testimonial/testimonial';

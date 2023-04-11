@@ -1,0 +1,9 @@
+.footer {
+    background-color: #004986;
+    &__left_column {
+        max-width: 516px;
+    }
+    &__right_column {
+        max-width: 624px;
+    }
+}
