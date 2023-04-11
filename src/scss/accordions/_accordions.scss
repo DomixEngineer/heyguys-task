@@ -43,6 +43,9 @@
             &__body {
                 position: relative;
                 left: 14%;
+                &--inactive {
+                    display: none;
+                }
                 &__text {
                     @include basic-font;
                     font-size: 18px;
