@@ -8,6 +8,14 @@ if (accordions && accordions.length > 0) {
         let singleAccordion = accordions[x]
         let singleAccordionIcon = singleAccordion.children[0].children[0]
         let singleAccordionIconImg = singleAccordion.children[0].children[0].children[0]
+        let singleAccordionBody = singleAccordion.children[1]
+
+        // Make some clean-up with close / open icons on page load
+        if (!singleAccordionBody.classList.contains(inactiveClassName)) {
+            singleAccordionIconImg.src = closeAccordionImgSrc;
+        }
+
+        // Add accordions actions
         singleAccordionIcon.addEventListener('click', (event) => {
             let body = event.target.parentNode.parentNode.nextElementSibling
             let isInactive = body.classList.contains(inactiveClassName)
@@ -19,5 +27,6 @@ if (accordions && accordions.length > 0) {
                 singleAccordionIconImg.src = openAccordionImgSrc;
             }
         })
+
     }
 } 
