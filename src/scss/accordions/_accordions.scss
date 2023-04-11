@@ -1,0 +1,54 @@
+.accordions {
+    margin-bottom: 140px;
+    margin-top: 120px;
+    &__left_side {
+        width: 40%;
+        &__header {
+            @include basic-font;
+            font-weight: 300;
+            font-size: 48px;
+        }
+        &__desc {
+            @include basic-font;
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+    &__right_side {
+        width: 60%;
+        box-sizing: border-box;
+        padding-left: 3vw;
+        .single-accordion {
+            max-width: 550px;
+            width: 100%;
+            &__header {
+                display: flex;
+                align-items: center;
+                &__icon {
+                    max-width: 40px;
+                    width: 100%;
+                    margin-right: 30px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                &__title {
+                    h1 {
+                        @include basic-font;
+                        font-weight: 300;
+                    }
+                }
+            }
+            &__body {
+                position: relative;
+                left: 14%;
+                &__text {
+                    @include basic-font;
+                    font-size: 18px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
