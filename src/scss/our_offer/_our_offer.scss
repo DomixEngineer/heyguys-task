@@ -1,0 +1,18 @@
+.our_offer {
+    padding: 120px 0px;
+    &__small_header {
+        @include basic-font;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 200;
+        margin: 0;
+    }
+    &__header {
+        @include basic-font;
+        text-align: center;
+        font-weight: 300;
+        font-size: 48px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}

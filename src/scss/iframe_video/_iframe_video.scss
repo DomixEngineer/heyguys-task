@@ -15,7 +15,7 @@
             top: 40%;
         }
         &__title {
-            font-family: 'Inter', sans-serif;
+            @include basic-font;
             color: $white;
             font-size: 35px;
             font-weight: 300;

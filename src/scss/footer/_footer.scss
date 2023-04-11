@@ -1,9 +1,20 @@
 .footer {
     background-color: #004986;
+    color: $white;
+    font-weight: 300;
+    @include basic-font;
+    padding: 60px 0px 30px 0px;
     &__left_column {
         max-width: 516px;
+        font-size: 24px;
+        font-weight: 200;
+        p {
+            margin: 0;
+        }
     }
     &__right_column {
         max-width: 624px;
+        font-size: 20px;
+        font-weight: 200;
     }
 }

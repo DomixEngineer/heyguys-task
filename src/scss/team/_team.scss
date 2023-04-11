@@ -1,0 +1,24 @@
+.our_team {
+    display: flex;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20vh 0px;
+    &__left_column {
+        max-width: 526px;
+        &__heading {
+            @include basic-font;
+            font-weight: 300;
+            font-size: 48px;
+        }
+        &__content {
+            @include basic-font;
+            font-weight: 300;
+            font-size: 22px;
+        }
+    }
+    &__right_column {
+        max-width: 764px;
+    }
+}

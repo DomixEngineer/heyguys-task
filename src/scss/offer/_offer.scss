@@ -1,0 +1,39 @@
+.offer {
+    text-align: center;
+    &__header {
+        @include basic-font;
+        font-weight: 300;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .offers_items {
+        display: flex;
+        justify-content: space-between;
+        &__single_item {
+            max-width: 406px;
+            width: 100%;
+            position: relative;
+            &__img {
+                display: block;
+                width: 100%;
+                border-radius: 26px;
+            }
+            &__offer_link {
+                display: flex;
+                position: absolute;
+                background-color: $white;
+                padding: 2px 50px;
+                border-radius: 40px;
+                top: 43%;
+                left: 21%;
+                @include basic-font;
+                img {
+                    margin-right: 20px;
+                }
+                p {
+    
+                }
+            }
+        }
+    }
+}

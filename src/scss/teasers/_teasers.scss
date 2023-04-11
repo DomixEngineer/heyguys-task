@@ -1,0 +1,48 @@
+.teasers {
+    background-color: #DBE9F9;
+    padding: 180px 0px;
+    &__header {
+        @include basic-font;
+        font-weight: 300;
+        font-size: 48px;
+    }
+    &__single_teaser {
+        max-width: 407px;
+        width: 100%;
+        &__head {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &__body {
+            background-color: $white;
+            box-sizing: border-box;
+            padding: 30px 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            &__title {
+                @include basic-font;
+                font-size: 24px;
+                font-weight: 400;
+                margin: 0;
+            }
+            &__content {
+                @include basic-font;
+                font-size: 18px;
+                font-weight: 300;
+            }
+            &__read_more {
+                display: flex;
+                img {
+                    margin-right: 20px;
+                }
+                p {
+                    color: #004986;
+                    @include basic-font;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
